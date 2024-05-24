@@ -1,10 +1,14 @@
 <?php
 
  
-class Demande{
+class Demande extends Model {
     private int $idd;
     private string $dated;
-    private int $idtc;
-    private int $idu;
+
+    public function __construct() {
+        $this->table = "demande";
+        $this->class = "DemandeModel";
+    }
+
 
 }
