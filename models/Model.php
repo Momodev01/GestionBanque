@@ -19,4 +19,9 @@ abstract class Model {
             "" 
         );
     }
+
+    public function save( array $data) {
+        $SQL_INSERT = "INSERT INTO $this->table(nomF, telF) VALUES ('$this->nomF', '$this->telF')";
+        $result = $this->openConnexion()->exec($SQL_INSERT);
+    }
 }

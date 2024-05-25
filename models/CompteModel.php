@@ -13,5 +13,5 @@ class Compte extends Model {
         $this->table = "compte";
         $this->class = "CompteModel";
     }
-
+    
 }

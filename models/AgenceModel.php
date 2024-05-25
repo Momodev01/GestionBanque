@@ -10,4 +10,7 @@ class Agence extends Model {
         $this->class = "AgenceModel";
     }
 
+    public function getAida() {
+        return $this->ida;
+    }
 }
